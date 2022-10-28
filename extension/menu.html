@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Console Color</title>
+  <script src="consolecolor.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="menu.css">
+</head>
+
+<body>
+
+  <img id="logo" src="icons/32.png"/>
+
+  <button id="exitBtn"><i class="fa fa-times-circle-o fa-2x"></i></button>
+
+  <div class="title">
+    <h1>Console Color</h1>
+  </div>
+
+  <div>
+    <div class="accounts-div">
+      <h3 class="active" id="btnAccounts">Accounts</h3>
+    </div>
+    <div class="accounts-div">
+      <h3 id="btnOptions">Options</h3>
+    </div>
+    <div class="accounts-div">
+      <h3 id="btnConfig">JSON</h3>
+    </div>
+  </div>
+  </div>
+
+  <table id="accounts">
+    <tr>
+      <th></th>
+      <th></th>
+      <th>AWS Account Id</th>
+      <th>Label</th>
+    </tr>
+    <tr>
+      <td></td>
+      <td><input type="color" id="colorDefault" name="colorDefault" value="#232f3e"></td>
+      <td><input type="text" placeholder="Default Color" size="13" disabled></input></td>
+      <td><input type="text" placeholder="" size="13" disabled style="display: none;"></input></td>
+    </tr>
+
+    <tbody id="accountList">
+      <!--
+        <tr>
+            <td>
+                <button id="rmBtn" title="Remove Account"><i class="fa fa-minus" style="color: red"></i></button>  
+            </td>
+            <td>
+                <input type="color" value="#b6b6b6">
+            </td>
+            <td>
+                <input type="text" placeholder="123456789012" size="13" disabled></input>
+            </td>
+            <td>
+                <input type="text" placeholder="Production" size="13"></input>
+            </td>
+        </tr>
+        -->
+    </tbody>
+
+    <tr>
+      <td>
+        <button id="addBtn" title="Add Account"><i class="fa fa-plus" style="color: green"></i></button>
+      </td>
+      <td>
+        <input id="addColor" type="color" value="#E61E1E">
+      </td>
+      <td>
+        <input id="addAccountId" type="text" placeholder="123456789012" size="13"></input>
+      </td>
+      <td>
+        <input id="addLabel" type="text" placeholder="" size="13"></input>
+      </td>
+    </tr>
+
+  </table>
+
+  <form id="options" style="display: none;">
+    <div class="options-div">
+      <input type="checkbox" id="colorHeader" name="colorHeader" value="Colorize Header" checked>
+      <label for="colorHeader">Color Header</label><br>
+      <input type="checkbox" id="colorFooter" name="colorFooter" value="Colorize Footer" checked>
+      <label for="colorFooter">Color Footer</label><br>
+      <input type="checkbox" id="labelHeader" name="labelHeader" value="Label Header" checked>
+      <label for="labelHeader">Label Header</label><br>
+      <input type="checkbox" id="labelFooter" name="labelFooter" value="Label Footer" checked>
+      <label for="labelFooter">Label Footer</label><br>
+    </div>
+  </form>
+
+  <div id="config" style="display: none;">
+    <div>
+      <textarea id="json"></textarea>
+    </div>
+    <button id="btnSave">Save</button>
+    <button id="btnReset">Reset Config</button>
+  </div>
+
+  <br>
+
+  <div id="message" style="display: none;"></div>
+
+</body>
+
+</html>

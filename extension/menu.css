@@ -1,0 +1,106 @@
+body {
+  margin: 20px;
+  min-width: 350px;
+  min-height: 500px;
+}
+
+#logo {
+  position: fixed;
+  top: 5px;
+  left: 5px;
+  height:24px;
+  width: 24px;
+}
+
+#exitBtn {
+  position: fixed;
+  top: 3px;
+  right: 10px;
+  height:24px;
+  width: 24px;
+  color: #e66464;
+  background-color: transparent;
+  border: none;
+}
+
+#logo:hover,
+#exitBtn:hover {
+  transform: scale(1.1); 
+}
+
+#btnReset:hover {
+  cursor: pointer;
+  color: white;
+  background-color: red;
+}
+
+h1 {
+  text-align: center;
+  margin: 0px 0px 20px 0px;
+}
+
+h1,
+h3 {
+  color: #5C5C5C;
+}
+
+h3 {
+  padding: 3px;
+  background-color: #dfdfdf;
+}
+
+#options {
+  padding: 5px;
+}
+
+.accounts-div {
+  text-align: center;
+  width: 33%;
+  float: left;
+}
+
+.accounts-div>.active {
+  border-bottom: #5C5C5C solid 5px;
+}
+
+.accounts-div>h3 {
+  border-bottom: #dfdfdf solid 5px;
+}
+
+.accounts-div>h3:hover {
+  cursor: pointer;
+  border-bottom: #5C5C5C solid 5px;
+}
+
+.accounts-div>h3.active:hover {
+  cursor: default;
+  color: #5C5C5C;
+  background-color: #dfdfdf;
+}
+
+.fa-plus {
+  color: green;
+}
+
+.fa-minus {
+  color: red;
+}
+
+th,
+td {
+  padding: 5px;
+  margin: 5px;
+}
+
+#json {
+  width: 100%;
+  min-height: 250px;
+}
+
+#message.error {
+  color: red;
+}
+
+#message.help {
+  color: green
+}
